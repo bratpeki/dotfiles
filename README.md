@@ -7,6 +7,7 @@ The repo currently includes my configs for:
 
 - NeoVim
 - ViFM
+- Zathura
 
 ## Installation
 
