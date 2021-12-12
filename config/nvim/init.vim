@@ -81,6 +81,7 @@ map <silent><M-Right> :vertical resize +1<CR>
 map <silent><M-Up> :resize +1<CR>
 
 map <silent>,clp :!pdflatex %<CR>
+map <silent>,cp :!php % > index.html<CR>:!qutebrowser index.html &<CR>
 
 map <silent>,grc :e ~/.config/nvim/init.vim<CR>
 

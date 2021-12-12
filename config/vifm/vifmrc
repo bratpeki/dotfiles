@@ -208,4 +208,7 @@ nnoremap <c-q> :q<cr>
 nnoremap ,gh :cd ~<cr>
 nnoremap ,md :mkdir<space>
 nnoremap ,mf :touch<space>
+nnoremap ,ond :!nvim .<cr>
+nnoremap ,onf :!nvim %c<cr>
+nnoremap ,oo :!loffice %c<cr>
 
