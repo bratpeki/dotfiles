@@ -62,7 +62,6 @@ let g:goyo_height = "80%"
 let g:goyo_width = "80%"
 let g:python_recommended_style = 0
 
-" Meanings
 " c - Compile
 " g - GoTo
 " h - Help
@@ -81,7 +80,6 @@ map <silent><M-Right> :vertical resize +1<CR>
 map <silent><M-Up> :resize +1<CR>
 
 map <silent>,clp :!pdflatex %<CR>
-map <silent>,cp :!php % > index.html<CR>:!qutebrowser index.html &<CR>
 
 map <silent>,grc :e ~/.config/nvim/init.vim<CR>
 

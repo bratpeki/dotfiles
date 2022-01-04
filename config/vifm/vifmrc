@@ -202,13 +202,17 @@ nnoremap <a-o> :sync %c<cr>
 nnoremap <c-u> <c-w>x
 
 nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
-nnoremap ,o :only<cr>
-nnoremap <c-q> :q<cr>
 
 nnoremap ,gh :cd ~<cr>
+
 nnoremap ,md :mkdir<space>
 nnoremap ,mf :touch<space>
-nnoremap ,ond :!nvim .<cr>
-nnoremap ,onf :!nvim %c<cr>
-nnoremap ,oo :!loffice %c<cr>
+
+nnoremap ,o :only<cr>
+
+nnoremap ,end :!nvim .<cr>
+nnoremap ,enf :!nvim %c<cr>
+nnoremap ,eo :!loffice %c<cr>
+
+nnoremap <c-q> :q<cr>
 
