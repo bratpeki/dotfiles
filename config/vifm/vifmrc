@@ -45,7 +45,7 @@ filextype {*.djvu},<image/vnd.djvu> zathura %f
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
 	\<audio/*>
 	\ {Play using mpv}
-	\ mpv %f,
+	\ mpv --no-audio-display %f,
 	\ {Play using ffplay}
 	\ ffplay -nodisp -autoexit %c,
 
@@ -100,7 +100,7 @@ fileviewer {*.torrent},<application/x-bittorrent> dumptorrent -v %c
 filetype {*.zip,*.jar,*.war,*.ear,*.oxt,*.apkg},
         \<application/zip,application/java-archive>
        \ {Open using Ark}
-	   \ ark %c,
+       \ ark %c,
        \ {Mount with fuse-zip}
        \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
        \ {View contents}

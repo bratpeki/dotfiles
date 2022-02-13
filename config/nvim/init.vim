@@ -3,6 +3,8 @@ source /home/peki/.config/nvim/init-imports/coc.vim
 
 call plug#begin('~/.config/nvim/plugged/')
 
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'ap/vim-css-color'
 Plug 'bratpeki/truedark-vim'
 Plug 'habamax/vim-godot'
 Plug 'junegunn/fzf'
