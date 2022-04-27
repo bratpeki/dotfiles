@@ -1,8 +1,4 @@
 
-install:
-	@ echo "Copying configs onto system..."
-	@ cp -ri ./config/*                             ./config-ex/
-
 update:
 	@ echo "Copying Neovim configs into repo..."
 	@ [ -d ./config/nvim ] && rm -rf ./config/nvim                    ; \

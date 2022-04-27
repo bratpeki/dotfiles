@@ -60,8 +60,8 @@ autocmd FileType netrw setl bufhidden=delete
 " ALE Fixers and Linters installed via pip
 " let g:ale_fixers = {'*': [], 'python': ['black']}
 " let g:ale_linters = {'*': [], 'python': ['flake8']}
-let g:goyo_height = "80%"
-let g:goyo_width = "80%"
+let g:goyo_height = "75%"
+let g:goyo_width  = "75%"
 let g:python_recommended_style = 0
 
 " c - Compile
@@ -81,9 +81,11 @@ map <silent><M-Left> :vertical resize -1<CR>
 map <silent><M-Right> :vertical resize +1<CR>
 map <silent><M-Up> :resize +1<CR>
 
+map ,hh :help<space>
+
 map <silent>,clp :!pdflatex %<CR>
 
-map <silent>,grc :e ~/.config/nvim/init.vim<CR>
+map <silent>,gc :e ~/.config/nvim/init.vim<CR>
 
 map <silent>,nh :noh<CR>
 
@@ -97,8 +99,6 @@ map <silent>,tq :tabc<CR>
 map <silent>,we :Dirvish<CR>
 map <silent>,wf :Goyo<CR>
 map <silent>,wt :terminal<CR>:setlocal nonumber norelativenumber<CR>
-
-map ,hh :help<space>
 
 tnoremap <Esc> <C-\><C-n>
 
