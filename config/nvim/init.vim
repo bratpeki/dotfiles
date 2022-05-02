@@ -4,7 +4,6 @@ source /home/peki/.config/nvim/init-imports/coc.vim
 call plug#begin('~/.config/nvim/plugged/')
 
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'ap/vim-css-color'
 Plug 'bratpeki/truedark-vim'
 Plug 'habamax/vim-godot'
 Plug 'junegunn/fzf'
@@ -51,6 +50,7 @@ set shiftwidth=4
 set softtabstop=4
 set splitright
 set tabstop=4
+set termguicolors
 set wildmenu
 
 syntax on
