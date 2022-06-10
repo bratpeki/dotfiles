@@ -64,24 +64,9 @@ let g:goyo_height = "75%"
 let g:goyo_width  = "75%"
 let g:python_recommended_style = 0
 
-" c - Compile
-" g - GoTo
-" h - Help
-" n - No
-" p - Plug
-" t - Tab
-" w - Window
-
-map <silent><C-N> :enew<CR>
-map <silent><C-Q> :q<CR>
-map <silent><C-S> :w<CR>
-
-map <silent><M-Down> :resize -1<CR>
-map <silent><M-Left> :vertical resize -1<CR>
-map <silent><M-Right> :vertical resize +1<CR>
-map <silent><M-Up> :resize +1<CR>
-
 map ,hh :help<space>
+
+map ,os :OmniSharp
 
 map <silent>,clp :!pdflatex %<CR>
 
@@ -99,6 +84,15 @@ map <silent>,tq :tabc<CR>
 map <silent>,we :Dirvish<CR>
 map <silent>,wf :Goyo<CR>
 map <silent>,wt :terminal<CR>:setlocal nonumber norelativenumber<CR>
+
+map <silent><C-N> :enew<CR>
+map <silent><C-Q> :q<CR>
+map <silent><C-S> :w<CR>
+
+map <silent><M-Down> :resize -1<CR>
+map <silent><M-Left> :vertical resize -1<CR>
+map <silent><M-Right> :vertical resize +1<CR>
+map <silent><M-Up> :resize +1<CR>
 
 tnoremap <Esc> <C-\><C-n>
 
