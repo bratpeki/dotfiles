@@ -42,7 +42,7 @@ filextype {*.djvu},<image/vnd.djvu> zathura %f
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
 	\<audio/*>
 	\ {Play using mpv}
-	\ mpv --no-audio-display %f,
+	\ mpv %f,
 	\ {Play using ffplay}
 	\ ffplay -nodisp -autoexit %c,
 
@@ -70,6 +70,10 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 filextype {*.svg},<image/svg> inkscape %c &
 filextype {*.gif},<image/gif> mpv %f --loop
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.xpm},<image/*> feh %f
+
+filetype *.js
+       \ {Open via NeoVim}
+       \ nvim %f
 
 filetype *.md5
        \ {Check MD5 hash sum}
@@ -183,9 +187,9 @@ nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
 
-nnoremap ,t :!xterm &<cr>
+nnoremap \t :!xterm &<cr>
 
-nnoremap ,w :set wrap!<cr>
+nnoremap \w :set wrap!<cr>
 
 nnoremap <f3> :!less %f<cr>
 nnoremap <f4> :edit<cr>
@@ -199,17 +203,6 @@ nnoremap <a-o> :sync %c<cr>
 nnoremap <c-u> <c-w>x
 
 nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
-
-nnoremap ,gh :cd ~<cr>
-
-nnoremap ,md :mkdir<space>
-nnoremap ,mf :touch<space>
-
-nnoremap ,o :only<cr>
-
-nnoremap ,end :!nvim .<cr>
-nnoremap ,enf :!nvim %c<cr>
-nnoremap ,eo :!loffice %c<cr>
 
 nnoremap <c-q> :q<cr>
 

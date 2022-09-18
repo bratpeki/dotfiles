@@ -1,8 +1,7 @@
 
-source /home/peki/.config/nvim/init-imports/coc.vim
-
 call plug#begin('~/.config/nvim/plugged/')
 
+Plug '7erra/vim-sqf'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'bratpeki/truedark-vim'
 Plug 'habamax/vim-godot'
@@ -57,33 +56,16 @@ syntax on
 
 autocmd FileType netrw setl bufhidden=delete
 
-" ALE Fixers and Linters installed via pip
-" let g:ale_fixers = {'*': [], 'python': ['black']}
-" let g:ale_linters = {'*': [], 'python': ['flake8']}
 let g:goyo_height = "75%"
 let g:goyo_width  = "75%"
 let g:python_recommended_style = 0
 
-map ,hh :help<space>
+let mapleader = ","
 
-map ,os :OmniSharp
+source /home/peki/.config/nvim/init-imports/coc.vim
 
-map <silent>,clp :!pdflatex %<CR>
-
-map <silent>,gc :e ~/.config/nvim/init.vim<CR>
-
-map <silent>,nh :noh<CR>
-
-map <silent>,pc :PlugClean<CR>
-map <silent>,pi :PlugInstall<CR>
-map <silent>,pu :PlugUpdate<CR>
-
-map <silent>,te :tabe<CR>
-map <silent>,tq :tabc<CR>
-
-map <silent>,we :Dirvish<CR>
-map <silent>,wf :Goyo<CR>
-map <silent>,wt :terminal<CR>:setlocal nonumber norelativenumber<CR>
+map <leader>hh :help<space>
+map <leader>os :OmniSharp
 
 map <silent><C-N> :enew<CR>
 map <silent><C-Q> :q<CR>
@@ -93,6 +75,23 @@ map <silent><M-Down> :resize -1<CR>
 map <silent><M-Left> :vertical resize -1<CR>
 map <silent><M-Right> :vertical resize +1<CR>
 map <silent><M-Up> :resize +1<CR>
+
+map <silent><leader>gc :e ~/.config/nvim/init.vim<CR>
+
+map <silent><leader>nh :noh<CR>
+
+map <silent><leader>pc :PlugClean<CR>
+map <silent><leader>pi :PlugInstall<CR>
+map <silent><leader>pu :PlugUpdate<CR>
+
+map <silent><leader>te :tabe<CR>
+map <silent><leader>tq :tabc<CR>
+
+map <silent><leader>we :Dirvish<CR>
+map <silent><leader>wf :Goyo<CR>
+map <silent><leader>wt :terminal<CR>:setlocal nonumber norelativenumber<CR>
+
+map <silent>ff :FZF<CR>
 
 tnoremap <Esc> <C-\><C-n>
 
