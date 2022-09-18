@@ -1,4 +1,3 @@
-
 highlight clear
 
 highlight Border     ctermfg=238 ctermbg=248 cterm=none
@@ -25,18 +24,3 @@ highlight TopLine    ctermfg=238 ctermbg=248 cterm=none
 highlight TopLineSel ctermfg=238 ctermbg=248 cterm=none
 highlight WildMenu   ctermfg=7 ctermbg=0 cterm=none
 highlight Win        ctermfg=251 ctermbg=0 cterm=none
-
-" Unchanged elements
-" highlight JobLine ctermfg=black ctermbg=white cterm=none
-" highlight CmpMismatch ctermfg=white ctermbg=red cterm=none
-" highlight AuxWin ctermfg=default ctermbg=default cterm=none
-" highlight User1 ctermfg=default ctermbg=default cterm=none
-" highlight User2 ctermfg=default ctermbg=default cterm=none
-" highlight User3 ctermfg=default ctermbg=default cterm=none
-" highlight User4 ctermfg=default ctermbg=default cterm=none
-" highlight User5 ctermfg=default ctermbg=default cterm=none
-" highlight User6 ctermfg=default ctermbg=default cterm=none
-" highlight User7 ctermfg=default ctermbg=default cterm=none
-" highlight User8 ctermfg=default ctermbg=default cterm=none
-" highlight User9 ctermfg=default ctermbg=default cterm=none
-" highlight OddLine ctermfg=default ctermbg=default cterm=none
