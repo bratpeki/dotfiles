@@ -62,7 +62,10 @@ let g:python_recommended_style = 0
 
 let mapleader = ","
 
-source /home/peki/.config/nvim/init-imports/coc.vim
+source $HOME/.config/nvim/init-imports/coc.vim
+
+" For testing purposes
+" source $HOME/Code/GitHub/truedark-vim/colors/truedark.vim
 
 map <leader>hh :help<space>
 map <leader>os :OmniSharp
@@ -71,12 +74,14 @@ map <silent><C-N> :enew<CR>
 map <silent><C-Q> :q<CR>
 map <silent><C-S> :w<CR>
 
-map <silent><M-Down> :resize -1<CR>
-map <silent><M-Left> :vertical resize -1<CR>
+map <silent><M-Down>  :resize -1<CR>
+map <silent><M-Left>  :vertical resize -1<CR>
 map <silent><M-Right> :vertical resize +1<CR>
-map <silent><M-Up> :resize +1<CR>
+map <silent><M-Up>    :resize +1<CR>
 
-map <silent><leader>gc :e ~/.config/nvim/init.vim<CR>
+map <leader>mm :make<CR>
+
+map <silent><leader>grc :e ~/.config/nvim/init.vim<CR>
 
 map <silent><leader>nh :noh<CR>
 

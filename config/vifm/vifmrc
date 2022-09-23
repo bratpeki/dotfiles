@@ -36,9 +36,18 @@ nnoremap <a-i> :sync<cr>
 nnoremap <a-o> :sync %c<cr>
 nnoremap <c-u> <c-w>x
 
-noremap gc :write | edit $MYVIFMRC | restart full<cr>
+noremap S  :sort<cr>
+noremap grc :write | edit $MYVIFMRC | restart full<cr>
+noremap o  :only<cr>
 noremap s  :shell<cr>
 noremap w  :view<cr>
-noremap o  :only<cr>
+noremap md :mkdir<space>
+noremap mf :touch<space>
 
 nnoremap <c-q> :q<cr>
+
+filetype *.pdf zathura %f
+filetype *.mp4,*.mkv,*.webm mpv %f
+filetype *.ogg,*.mp3,*.out mpv %f
+filetype *.jpg,*.png feh %f
+filetype *.gif mpv --loop-file=inf %f
