@@ -3,6 +3,7 @@ source $HOME/.config/vifm/scripts/favicons.vifm
 set vicmd=nvim
 
 colorscheme truedark
+only
 
 set history=100
 set ignorecase
@@ -11,19 +12,19 @@ set nofollowlinks
 set nohlsearch
 set norunexec
 set relativenumber
-set scrolloff=4
 set smartcase
 set sortnumbers
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 set syscalls
-set timefmt=%m/%d\ %H:%M
+set timefmt=%m/%d\ %H:%M:%S
 set trash
 set undolevels=100
 set vimhelp
 set wildmenu
 set wildstyle=popup
 
-nnoremap \w :set wrap!<cr>
+" Will experiment on toggling this
+set sortorder=ascending
 
 nnoremap <f3> :!less %f<cr>
 nnoremap <f4> :edit<cr>
@@ -37,17 +38,23 @@ nnoremap <a-o> :sync %c<cr>
 nnoremap <c-u> <c-w>x
 
 noremap S  :sort<cr>
-noremap grc :write | edit $MYVIFMRC | restart full<cr>
 noremap o  :only<cr>
 noremap s  :shell<cr>
 noremap w  :view<cr>
+
+" Goto
+noremap grc :write | edit $MYVIFMRC | restart full<cr>
+" Make
 noremap md :mkdir<space>
 noremap mf :touch<space>
+" Toggle
+noremap tw :set wrap!<cr>
+"noremap to :set sortorder!<cr>
 
 nnoremap <c-q> :q<cr>
 
 filetype *.pdf zathura %f
 filetype *.mp4,*.mkv,*.webm mpv %f
-filetype *.ogg,*.mp3,*.out mpv %f
+filetype *.ogg,*.mp3,*.opus mpv %f
 filetype *.jpg,*.png feh %f
 filetype *.gif mpv --loop-file=inf %f
