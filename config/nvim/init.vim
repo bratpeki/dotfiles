@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'sheerun/vim-polyglot'
 Plug 'sickill/vim-monokai'
+Plug 'AcetylsalicylicAcid/truedark256-vim'
 
 call plug#end()
 
@@ -40,6 +41,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set list
+set mousemodel=extend
 set mouse=a
 set nowrap
 set nu rnu
@@ -51,6 +53,7 @@ set splitright
 set tabstop=4
 set termguicolors
 set wildmenu
+set shortmess=
 
 syntax on
 

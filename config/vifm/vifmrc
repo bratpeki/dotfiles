@@ -1,9 +1,10 @@
 source $HOME/.config/vifm/scripts/favicons.vifm
+"only
+map rr :restart<cr>
 
 set vicmd=nvim
 
 colorscheme truedark
-only
 
 set history=100
 set ignorecase
@@ -44,17 +45,23 @@ noremap w  :view<cr>
 
 " Goto
 noremap grc :write | edit $MYVIFMRC | restart full<cr>
+noremap gcs :write | edit /home/peki/.config/vifm/colors/truedark.vifm | restart full<cr>
 " Make
 noremap md :mkdir<space>
 noremap mf :touch<space>
-" Toggle
-noremap tw :set wrap!<cr>
-"noremap to :set sortorder!<cr>
 
 nnoremap <c-q> :q<cr>
 
-filetype *.pdf zathura %f
-filetype *.mp4,*.mkv,*.webm mpv %f
-filetype *.ogg,*.mp3,*.opus mpv %f
-filetype *.jpg,*.png feh %f
+filetype *.docx lowriter %f
+filetype *.exe wine %f
+filetype *.ppsx,*.pptx loffice %f &> /dev/null &
 filetype *.gif mpv --loop-file=inf %f
+filetype *.it schismtracker %f &
+filetype *.mod,*.xm milkytracker %f &> /dev/null &
+filetype *.mp4,*.mkv,*.webm,*.avi,*.lrv,*.mov mpv %f
+filetype *.ogg,*.mp3,*.opus,*.wav,*.m4a,*.flac mpv %f #--no-audio-display
+filetype *.pdf zathura %f &> /dev/null &
+filetype *.rar,*.zip,*.tar.gz ark %f
+filetype *.webp,*.jpeg,*.jpg,*.png,*.bmp feh %f
+filetype *.xcf gimp %f &
+filetype *.mmpz lmms %f &> /dev/null &

@@ -1,6 +1,8 @@
 {
 	"clangd.inlayHints.enable": false,
 	"clangd.path": "/home/peki/.config/coc/extensions/coc-clangd-data/install/14.0.0/clangd_14.0.0/bin/clangd",
-	"colors.filetypes": ["*"],
+
+	"colors.enable": true,
+
 	"rust-analyzer.server.path": "/usr/bin/rust-analyzer"
 }
