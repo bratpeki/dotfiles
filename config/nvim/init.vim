@@ -9,7 +9,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/goyo.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ntpeters/vim-better-whitespace'
+"Plug 'ntpeters/vim-better-whitespace'
 Plug 'sheerun/vim-polyglot'
 Plug 'sickill/vim-monokai'
 Plug 'AcetylsalicylicAcid/truedark256-vim'
@@ -83,6 +83,7 @@ map <silent><M-Right> :vertical resize +1<CR>
 map <silent><M-Up>    :resize +1<CR>
 
 map <leader>mm :make<CR>
+map <leader>mt :make todo<CR>
 
 map <silent><leader>grc :e ~/.config/nvim/init.vim<CR>
 
@@ -103,3 +104,4 @@ map <silent>ff :FZF<CR>
 
 tnoremap <Esc> <C-\><C-n>
 
+map <silent>ss :source %<cr>
