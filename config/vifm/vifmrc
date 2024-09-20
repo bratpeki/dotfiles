@@ -60,15 +60,16 @@ filetype *.exe wine %f
 filetype *.gif mpv --loop-file=inf %f
 filetype *.it schismtracker %f &
 filetype *.kdenlive kdenlive %f
-filetype *.mmpz lmms %f &> /dev/null &
+filetype *.mmpz,*.mmp lmms %f &> /dev/null &
 filetype *.mod,*.xm milkytracker %f &> /dev/null &
 filetype *.mp4,*.m4v,*.mkv,*.webm,*.avi,*.lrv,*.mov mpv %f
-"filetype *.ogg,*.mp3,*.opus,*.wav,*.m4a,*.flac mpv %f --no-audio-display
-filetype *.ogg,*.mp3,*.opus,*.wav,*.m4a,*.flac mpv %f
+filetype *.ogg,*.mp3,*.opus,*.wav,*.m4a,*.flac,*.aif mpv %f
+filetype *.ipynb code %f &
 filetype *.pdf zathura %f &> /dev/null &
-filetype *.odp,*.ppsx,*.pptx loffice %f &> /dev/null &
-filetype *.rar,*.zip,*.tar.gz ark %f
+filetype *.odg,*.odt,*.odp,*.ppsx,*.pptx loffice %f &> /dev/null &
+filetype *.rar,*.zip,*.tar.gz,*.7z ark %f
 filetype *.webp,*.jpeg,*.jpg,*.png,*.bmp feh %f
 filetype *.xcf gimp %f &
 filetype *.mid fluidsynth $HOME/Music/Prod/SAMPLE_PROJ/INST/SOUNDFONT/GeneralUser.sf2 %f
 filetype *.odf lomath %f
+filetype *.ardour ardour8 "%d"/"%f"
