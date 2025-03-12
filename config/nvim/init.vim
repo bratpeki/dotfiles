@@ -1,18 +1,11 @@
 
 call plug#begin('~/.config/nvim/plugged/')
 
-Plug '7erra/vim-sqf'
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'bratpeki/truedark-vim'
-Plug 'habamax/vim-godot'
-Plug 'junegunn/fzf'
-Plug 'junegunn/goyo.vim'
 Plug 'justinmk/vim-dirvish'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'ntpeters/vim-better-whitespace'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'sheerun/vim-polyglot'
-Plug 'sickill/vim-monokai'
-Plug 'AcetylsalicylicAcid/truedark256-vim'
 
 call plug#end()
 
@@ -65,7 +58,7 @@ let g:python_recommended_style = 0
 
 let mapleader = ","
 
-source $HOME/.config/nvim/init-imports/coc.vim
+" source $HOME/.config/nvim/init-imports/coc.vim
 
 " For testing purposes
 " source $HOME/Code/GitHub/truedark-vim/colors/truedark.vim

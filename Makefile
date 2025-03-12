@@ -37,4 +37,3 @@ install:
 		  cp ./config/zathura/zathurarc                 $${HOME}/.config/zathura/zathurarc
 	@ echo "Done!"
 
-
